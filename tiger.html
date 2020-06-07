@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <style>
+        body
+        {
+          background: gray;
+        }
+        .container
+        {
+          position: absolute;
+          margin: 0;
+          padding: 0;
+          left:50%;
+          top:50%;
+          width: 600px;
+          height: 50px;
+          transform: translate(-50%,-50%);
+          overflow: hidden;
+          border-radius: 30px;
+        }
+        .loading
+        {
+          position: absolute;
+          left:50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          display: flex;
+        }
+        span
+        {
+          background-color: orange;
+          width:30px;
+          height:100px;
+          margin: 12px;
+          transform: rotate(40deg);
+          animation: loading .1s linear infinite;
+          position: relative;
+        }
+
+        @keyframes loading
+        {
+          0%{left:-50px}
+          100%{left:0}
+        }
+        video
+        {
+          position: absolute;
+          width:500px;
+          left:30%;
+        }
+    </style>
+  </head>
+
+  <body>
+    <video src="https://media.giphy.com/media/wUkgcZZsHLUvC/giphy.mp4" loop autoplay muted></video>
+    <div class="container">
+        <div class="loading">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+
+
+        </div>
+    </div>
+  </body>
+</html>
